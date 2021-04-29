@@ -1,0 +1,167 @@
+/**
+ * Basic typography style for copy text
+ */
+
+ // Body text
+// -------------------------
+
+// html {
+//   font-size: 62.5%;
+// }
+
+body {
+  @include media-breakpoint-up(lg) {
+    @include font-size(1rem);
+  }
+
+  font-size: .875rem;
+  font-weight: $font-weight-light;
+  font-family: $font-family-poppins;
+  letter-spacing: .4px;
+  line-height: 1.5rem;
+  color: $body-color;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 36px;
+  }
+
+  margin-bottom: 28px;
+}
+
+ol,
+ul,
+p,
+blockquote,
+.preamble {
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 36px;
+  }
+
+  margin-bottom: 28px;
+}
+
+// Headings
+// -------------------------
+h1,
+h2,
+h3,
+h4,
+.h1,
+.h2,
+.h3,
+.h4 {
+  font-family: $font-family-poppins;
+}
+
+h5,
+h6,
+.h5,
+.h6 {
+  font-family: $font-family-poppins;
+}
+
+h1,
+.h1 {
+  @include media-breakpoint-up(lg) {
+    @include font-size($h1-font-size);
+    letter-spacing: .22px;
+    line-height: $h1-line-height;
+  }
+
+  color: $text-color-1;
+  font-size: $h1-font-size-touch;
+  font-weight: $font-weight-normal;
+  line-height: $h1-line-height-touch;
+  letter-spacing: .13px;
+  text-transform: uppercase;
+}
+
+h2,
+.h2 {
+  @include media-breakpoint-up(lg) {
+    @include font-size($h2-font-size);
+    letter-spacing: .14px;
+    line-height: $h2-line-height;
+  }
+
+  color: $text-color-1;
+  font-size: $h2-font-size-touch;
+  font-weight: $font-weight-normal;
+  letter-spacing: .08px;
+  line-height: $h2-line-height-touch;
+  text-transform: initial;
+}
+
+h3,
+.h3 {
+  @include media-breakpoint-up(lg) {
+    @include font-size($h3-font-size);
+    letter-spacing: .08px;
+    line-height: $h3-line-height;
+  }
+
+  color: $text-color-1;
+  font-size: $h3-font-size-touch;
+  font-weight: $font-weight-normal;
+  letter-spacing: .06px;
+  line-height: $h3-line-height-touch;
+  text-transform: initial;
+}
+
+h4,
+.h4 {
+  @include media-breakpoint-up(lg) {
+    @include font-size($h4-font-size);
+    line-height: $h4-line-height;
+  }
+
+  color: $text-color-1;
+  font-size: $h4-font-size-touch;
+  font-weight: $font-weight-normal;
+  letter-spacing: .05px;
+  line-height: $h4-line-height-touch;
+  text-transform: initial;
+}
+
+h5,
+.h5 {
+  @include media-breakpoint-up(lg) {
+    @include font-size($h5-font-size);
+    line-height: $h5-line-height;
+  }
+
+  color: $text-color-1;
+  font-size: $h5-font-size-touch;
+  font-weight: $font-weight-bold;
+  letter-spacing: normal;
+  line-height: $h5-line-height-touch;
+  text-transform: initial;
+}
+
+h6,
+.h6 {
+  @include media-breakpoint-up(lg) {
+    @include font-size($h6-font-size);
+    line-height: $h6-line-height;
+  }
+  color: $text-color-1;
+  font-size: $h6-font-size-touch;
+  font-weight: $font-weight-bold;
+  letter-spacing: normal;
+  line-height: $h6-line-height-touch;
+  text-transform: initial;
+}
