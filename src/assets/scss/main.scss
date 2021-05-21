@@ -28,11 +28,26 @@
 
 // 5. Components
 @import
-  'components/button';
+  'components/agency',
+  'components/arris-media',
+  'components/button',
+  'components/form',
+  'components/page-header',
+  'components/property',
+  'components/radio',
+  'components/video',
+  'components/testimonial',
+  'components/title',
+  'components/service',
+  'components/slick',
+  'components/navs';
 
 // 6. Page-specific styles
 @import
-  'pages/home';
+  'pages/agencies',
+  'pages/contact',
+  'pages/home',
+  'pages/properties';
 
 // 7. Themes
 @import

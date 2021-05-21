@@ -1,4 +1,22 @@
 {
     "title": "Hello, world!",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque asperiores quas ratione veritatis officiis. Praesentium sunt aperiam ipsa error hic! Pariatur rerum at, laborum aliquam quo accusantium dolorem possimus."
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque asperiores quas ratione veritatis officiis. Praesentium sunt aperiam ipsa error hic! Pariatur rerum at, laborum aliquam quo accusantium dolorem possimus.",
+    "services": [
+        {
+            "name": "Facility Management",
+            "image": "service-1.jpg"
+        },
+        {
+          "name": "Financement",
+          "image": "service-2.jpg"
+        },
+        {
+          "name": "Evaluation",
+          "image": "service-3.jpg"
+        },
+        {
+          "name": "Assurance",
+          "image": "service-44.jpg"
+        }
+    ]
 }

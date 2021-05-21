@@ -1,0 +1,376 @@
+---
+layout: default
+title: Un réseau  global
+---
+
+<main class="main">
+  <div
+    class="page-header"
+    style="background-image: url({{root}}assets/img/bg/agencies-bg.jpeg);"
+  >
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="page-header__inner">
+            <h1>{{title}}</h1>
+            <p class="">Nous vous accompagnons dans vos destinations</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section
+    class="search-section bg-image"
+    data-background="{{root}}assets/img/bg/search-bg.jpg"
+  >
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">{{>search-form}}</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="agent-section">
+    <div class="container">
+      <ol class="breadcrumb bg-white p-0">
+        <li class="breadcrumb-item"><a href="/">ARRIS AGENCY : Togo</a></li>
+        <li class="breadcrumb-item"><a href="/">Lomé</a></li>
+        <li class="breadcrumb-item"><a href="/">Agences</a></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          ARRIS ALPHA MASTER
+        </li>
+      </ol>
+
+      <div class="listing-header">
+        <div class="page-title">
+          <h3>Trouvez votre agence la plus proche</h3>
+        </div>
+
+        <div class="sort-box">
+          <div class="dropdown">
+            <button
+              class="btn btn-outline-primary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              TOGO
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">TOGO</a>
+              <a class="dropdown-item" href="#">GABON</a>
+              <a class="dropdown-item" href="#">INTERNATIONAL</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="agent-wrapper" id="agent-wrapper">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="agent-details bordered">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="agent-img">
+                    <img src="{{root}}assets/img/agency-2.jpg" alt="" />
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="agent-infos">
+                    <h3 class="agent-name">ARRIS ALPHA MASTER</h3>
+                    <p class="agent-address">
+                      Cité OUA, Boulevard Eyadéma, <br />33, Rue des cocotiers,
+                      <br />
+                      Immeuble SAHAM Assurance, <br />
+                      Lomé - Togo, <br />
+                      01BP242, Lomé
+                    </p>
+                    <ul class="contacts">
+                      <li>
+                        <a href="tel:22225555">
+                          <i class="mdi mdi-phone-in-talk-outline"></i> +228 22
+                          22 55 55
+                        </a>
+                      </li>
+                      <li>
+                        <a href="tel:22225555">
+                          <i class="mdi mdi-cellphone"></i> +228 70 59 01 50
+                        </a>
+                      </li>
+                      <li>
+                        <a href="tel:22225555">
+                          <i class="mdi mdi-whatsapp"></i> +228 70 59 01 51
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="langs">
+                      Langue parlée : <span>Français, Anglais</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="agent-links">
+              <a href="/agents.html" class="link">
+                <img
+                  src="{{root}}assets/img/icons/account-group-outline.png"
+                  alt="House"
+                />
+                <span>Rencontrer nos agents</span>
+              </a>
+
+              <a href="/properties.html" class="link">
+                <img
+                  src="{{root}}assets/img/icons/home-search-outline.png"
+                  alt="House"
+                />
+                <span>Voir mes annonces</span>
+              </a>
+            </div>
+
+            <div class="agent-map bordered">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15865.793521990176!2d1.1833053999999998!3d6.20443275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1021585f3c25c6f1%3A0xb8b51acae989db53!2sTOTAL%20TOTSI!5e0!3m2!1sfr!2stg!4v1621552800753!5m2!1sfr!2stg"
+                width="100%"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-md-5">{{> sidebar-form }}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="related-section">
+    <div class="container">
+      <h3 class="text-center font-weight-bold">Agences dans la même zone</h3>
+
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="properties-wrapper">
+            <div class="properties">
+              <div class="property bordered">
+                <div class="property-img">
+                  <a href="#">
+                    <img
+                      src="{{root}}assets/img/services/service-1.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="property-content">
+                  <div class="metas">
+                    <div class="price">XOF 875 000 par mois</div>
+                    <div class="location">
+                      Cité OUA, Boulevard Eyadéma, <br />
+                      Lomé-Togo
+                    </div>
+                    <ul class="features">
+                      <li
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="Chambre à coucher"
+                      >
+                        <img
+                          src="{{root}}assets/img/icons/double-bed.png"
+                          alt=""
+                        />
+                        <span>4</span>
+                      </li>
+                      <li
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="Salles de  bains"
+                      >
+                        <img
+                          src="{{root}}assets/img/icons/bathtub.png"
+                          alt=""
+                        />
+                        <span>3</span>
+                      </li>
+                      <li
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="Garage"
+                      >
+                        <img src="{{root}}assets/img/icons/garage.png" alt="" />
+                        <span>2</span>
+                      </li>
+                      <li
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="Piscine"
+                      >
+                        <img
+                          src="{{root}}assets/img/icons/swimming-pool.png"
+                          alt=""
+                        />
+                        <span>2</span>
+                      </li>
+                    </ul>
+                    <span class="type">Villa</span>
+                  </div>
+                  <div class="property-actions">
+                    <a href="#"><i class="mdi mdi-email"></i></a>
+                    <a href="#"><i class="mdi mdi-heart"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="property bordered">
+                <div class="property-img">
+                  <a href="#">
+                    <img
+                      src="{{root}}assets/img/services/service-2.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="property-content">
+                  <div class="metas">
+                    <div class="price">XOF 350 000 par mois</div>
+                    <div class="location">
+                      Qt. Tokoin Wuity, Boulevard Jean-Paul II, <br />
+                      Lomé-Togo
+                    </div>
+                    <ul class="features">
+                      <li
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="Chambre à coucher"
+                      >
+                        <img
+                          src="{{root}}assets/img/icons/double-bed.png"
+                          alt=""
+                        />
+                        <span>3</span>
+                      </li>
+                      <li
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="Salles de bain"
+                      >
+                        <img
+                          src="{{root}}assets/img/icons/bathtub.png"
+                          alt=""
+                        />
+                        <span>2</span>
+                      </li>
+                      <li
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="Cuisine"
+                      >
+                        <img
+                          src="{{root}}assets/img/icons/kitchen.png"
+                          alt=""
+                        />
+                        <span>1</span>
+                      </li>
+                      <li
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="Animaux"
+                      >
+                        <img
+                          src="{{root}}assets/img/icons/pet-friendly.png"
+                          alt=""
+                        />
+                      </li>
+                    </ul>
+                    <span class="type">Appartement</span>
+                  </div>
+                  <div class="property-actions">
+                    <a href=""><i class="mdi mdi-email"></i></a>
+                    <a href=""><i class="mdi mdi-heart"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="property bordered">
+                <div class="property-img">
+                  <a href="#">
+                    <img
+                      src="{{root}}assets/img/services/service-2.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="property-content">
+                  <div class="metas">
+                    <div class="price">XOF 350 000 par mois</div>
+                    <div class="location">
+                      Qt. Tokoin Wuity, Boulevard Jean-Paul II, <br />
+                      Lomé-Togo
+                    </div>
+                    <ul class="features">
+                      <li
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="Chambre à coucher"
+                      >
+                        <img
+                          src="{{root}}assets/img/icons/double-bed.png"
+                          alt=""
+                        />
+                        <span>3</span>
+                      </li>
+                      <li
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="Salles de bain"
+                      >
+                        <img
+                          src="{{root}}assets/img/icons/bathtub.png"
+                          alt=""
+                        />
+                        <span>2</span>
+                      </li>
+                      <li
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="Cuisine"
+                      >
+                        <img
+                          src="{{root}}assets/img/icons/kitchen.png"
+                          alt=""
+                        />
+                        <span>1</span>
+                      </li>
+                      <li
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="Animaux"
+                      >
+                        <img
+                          src="{{root}}assets/img/icons/pet-friendly.png"
+                          alt=""
+                        />
+                      </li>
+                    </ul>
+                    <span class="type">Appartement</span>
+                  </div>
+                  <div class="property-actions">
+                    <a href=""><i class="mdi mdi-email"></i></a>
+                    <a href=""><i class="mdi mdi-heart"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

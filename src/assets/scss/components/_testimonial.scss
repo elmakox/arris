@@ -1,0 +1,91 @@
+.testimonials {
+  margin: 0 -15px 4rem;
+  
+}
+
+.testimonials-area {
+  position: relative;
+
+  .slick-button-next, .slick-button-prev {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 30px;
+    border: 1px solid #666;
+    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slick-button-prev {
+    left: -60px;
+  }
+
+  .slick-button-next {
+    right: -60px;
+  }
+}
+
+.testimonial {
+  text-align: center;
+  position: relative;
+  margin: 0 15px;
+
+  padding: 3rem 20px;
+
+
+  .quote-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+    &:before {
+      content: url(../img/quote.png)
+    }
+  }
+
+  .image-wrapper  {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #e6e6e6;
+
+    
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .quote-content {
+    p {
+      font-size: 0.875rem;
+    }
+
+    .author {
+
+      span {
+        &:after  {
+          content: '/';
+          margin: 0 5px;
+          font-weight: $font-weight-normal;
+        }
+      }
+
+      span:last-child {
+        &:after  {
+          content: '';
+          margin: 0;
+        }
+      }
+      .name {
+        font-weight: $font-weight-semibold;
+      }
+    }
+  }
+}

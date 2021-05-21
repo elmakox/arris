@@ -1,0 +1,44 @@
+.form-control  {
+  border-radius: .15rem;
+}
+
+.input-table-group {
+  display: table;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.input-table-item {
+  display: table-cell;
+  vertical-align: top;
+
+  &:nth-child(2) {
+    width: 1%;
+    overflow: hidden;
+  }
+
+  .search-primary-main-input {
+    height: 43px;
+    border: 0;
+  }
+
+  .btn {
+    padding: 10px;
+    margin-left: 15px;
+    height: 43px !important;
+  }
+}
+
+.advanced-search-panel {
+  padding: 1rem 0;
+  text-align: center;
+
+  .toggle-advanced  {
+    color: $white;
+  }
+}
+
+
+.form-control {
+  font-weight: $font-weight-normal;
+}

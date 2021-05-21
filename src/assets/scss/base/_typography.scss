@@ -15,8 +15,8 @@ body {
   }
 
   font-size: .875rem;
-  font-weight: $font-weight-light;
-  font-family: $font-family-poppins;
+  font-weight: $font-weight-normal;
+  font-family: $font-family-montserrat;
   letter-spacing: .4px;
   line-height: 1.5rem;
   color: $body-color;
@@ -64,14 +64,14 @@ h4,
 .h2,
 .h3,
 .h4 {
-  font-family: $font-family-poppins;
+  font-family: $font-family-montserrat;
 }
 
 h5,
 h6,
 .h5,
 .h6 {
-  font-family: $font-family-poppins;
+  font-family: $font-family-montserrat;
 }
 
 h1,
@@ -164,4 +164,9 @@ h6,
   letter-spacing: normal;
   line-height: $h6-line-height-touch;
   text-transform: initial;
+}
+
+
+.accent-color {
+  color: $accent-color;
 }

@@ -2,5 +2,80 @@
 // Global Footer Style.
 // -----------------------------------------------------------------------------
 .footer {
-    border-top: 1px solid $gray-100;
+  position: relative;
+  padding-top: 4rem;
+  background-image: url(../img/bg/footer-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // margin-top: 3rem;
+  font-size: 0.875rem;
+
+  &:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba($black, .15);
+  }
+}
+
+.footer-top {
+  position: relative;
+  text-align: center;
+}
+
+.footer-menu {
+  list-style-type: none;
+  margin: 2rem 0 4rem;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+
+  li {
+    margin-right: 1rem;
+    text-transform: uppercase;
+
+    a {
+      color: $white;
+    }
+  }
+}
+
+.footer-social {
+  ul {
+    margin: 0;
+    li {
+      width: 30px;
+      height: 30px;
+      border: 1px solid $white;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+
+      a {
+        color: $white;
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  position: relative;
+  margin: 1rem 0;
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    .credits {
+      color: $white;
+    }
+    a {
+      color: $white;
+    }
+  }
 }

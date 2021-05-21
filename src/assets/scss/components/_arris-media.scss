@@ -1,0 +1,129 @@
+.arris-media {
+  @include media-max(768px) {
+    display: block;
+
+    .arris-media__content {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+  margin: -5px;
+  display: flex;
+  align-items: center;
+}
+
+.arris-media.reverse {
+  flex-direction: row-reverse;
+
+  .arris-media__content {
+    margin-right: -5px;
+  }
+}
+
+.arris-media__content {
+  position: relative;
+  padding: 3rem 2rem;
+  flex-grow: 1;
+  flex-basis: 0;
+
+  margin-left: -5px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: #fff;
+    z-index: -1;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background-image: -webkit-linear-gradient(
+      315deg,
+      #e9e9e9 8.33%,
+      transparent 8.33%,
+      transparent 50%,
+      #e9e9e9 50%,
+      #e9e9e9 58.33%,
+      transparent 58.33%,
+      transparent 100%
+    );
+    background-image: -o-linear-gradient(
+      315deg,
+      #e9e9e9 8.33%,
+      transparent 8.33%,
+      transparent 50%,
+      #e9e9e9 50%,
+      #e9e9e9 58.33%,
+      transparent 58.33%,
+      transparent 100%
+    );
+    background-image: linear-gradient(
+      135deg,
+      #e9e9e9 8.33%,
+      transparent 8.33%,
+      transparent 50%,
+      #e9e9e9 50%,
+      #e9e9e9 58.33%,
+      transparent 58.33%,
+      transparent 100%
+    );
+    background-size: 8.49px 8.49px;
+    z-index: -2;
+  }
+
+  .subtitle {
+    color: $accent-color;
+    font-style: italic;
+  }
+
+  h3 {
+    margin-bottom: 1.1rem;
+    font-weight: $font-weight-semibold;
+  }
+
+  p,
+  ul {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+
+  .author {
+    .name {
+      font-weight: $font-weight-bold;
+    }
+
+    .role {
+      &:before,
+      &:after {
+        content: "\2012";
+      }
+
+      &:before {
+        margin-right: 5px;
+      }
+
+      &:after {
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+.arris-media__img {
+  margin: -5px;
+  flex-grow: 1;
+  flex-basis: 0;
+
+  img {
+    width: 100%;
+  }
+}

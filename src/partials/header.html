@@ -1,23 +1,46 @@
 <header class="main-header">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">IOKKA HOLDING</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-link" href="#">Features</a>
-        <a class="nav-link" href="#">About</a>
-      </div>
+  <div class="top-header-area">
+    <div class="container-fluid">
+      <ul class="top-menu">
+        <li>
+          <a href="#">
+            <img src="{{root}}assets/img/icons/globet.png" alt="globe icon" />
+            <span>Choisissez votre pays</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img
+              src="{{root}}assets/img/icons/account.png"
+              alt="account icon"
+            />
+            <span>Mon compte</span>
+          </a>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+
+  <div class="navbar-area">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+          <img src="{{root}}assets/img/ARRIS-LOGO.png" alt="Logo Arris" />
+        </a>
+        <button
+          class="navbar-toggler ml-auto"
+          type="button"
+          data-toggle="collapse"
+          data-target="#main-menu"
+          aria-controls="main-menu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        {{> navigation}}
+      </nav>
+    </div>
+  </div>
 </header>

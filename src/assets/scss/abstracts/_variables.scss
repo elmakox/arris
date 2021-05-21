@@ -6,9 +6,10 @@
 $red: #f05555;
 $gray-100: #f7f7f7;
 $gray-200: #e4e4e4;
+$gray-500: #9baeb6;
 $gray-900: #30302e;
 $beige-100: #f0ebe3;
-$primary: #266486;
+$primary: #666;
 $secondary: $beige-100;
 $success: $secondary;
 $info: $gray-900;
@@ -17,18 +18,31 @@ $danger: $red;
 $black: #000;
 $yellow: #ffcf2f;
 $gray: #707070;
+$white:  #fff;
+$default-gray: #777;
+
+$accent-color: #82c456;
+
+$white-inverse: $black !default;
+$primary-inverse: $white !default;
+$secondary-inverse: $black !default;
+$success-inverse: $black !default;
+$info-inverse: $black !default;
+$warning-inverse: $black !default;
+$danger-inverse: $black !default;
+$light-inverse: $gray-500 !default;
+$dark-inverse: $white !default;
 
 // Text Colors
-$text-color-1: #111;
+$body-color: #666;
+$text-color-1: #333;
 $text-color-2: $primary;
 $text-color-3: $black;
 $text-color-4: #031532;
 
 // Font Family
-// $font-family-playfair: "Playfair Display", serif;
-// $font-family-heebo: "Heebo", sans-serif;
 
-$font-family-poppins: 'Poppins', sans-serif;
+$font-family-montserrat: "Montserrat", sans-serif;
 
 // Font Size
 $font-size-base: 1rem;
@@ -49,9 +63,9 @@ $line-height-base: 1.5;
 $h1-font-size: $font-size-base * 4;
 $h2-font-size: $font-size-base * 2.4375;
 $h3-font-size: $font-size-base * 1.5;
-$h4-font-size: $font-size-base * .9375;
-$h5-font-size: $font-size-base * .75;
-$h6-font-size: $font-size-base * .6875;
+$h4-font-size: $font-size-base * 0.9375;
+$h5-font-size: $font-size-base * 0.75;
+$h6-font-size: $font-size-base * 0.6875;
 $h1-line-height: $font-size-base * 4.5;
 $h2-line-height: $font-size-base * 3;
 $h3-line-height: $font-size-base * 2.25;
@@ -63,9 +77,9 @@ $h6-line-height: $font-size-base * 1.5;
 $h1-font-size-touch: $font-size-base * 2.25;
 $h2-font-size-touch: $font-size-base * 1.5;
 $h3-font-size-touch: $font-size-base * 1.0625;
-$h4-font-size-touch: $font-size-base * .875;
-$h5-font-size-touch: $font-size-base * .75;
-$h6-font-size-touch: $font-size-base * .6875;
+$h4-font-size-touch: $font-size-base * 0.875;
+$h5-font-size-touch: $font-size-base * 0.75;
+$h6-font-size-touch: $font-size-base * 0.6875;
 $h1-line-height-touch: $font-size-base * 2.5;
 $h2-line-height-touch: $font-size-base * 2.25;
 $h3-line-height-touch: $font-size-base * 1.5;
@@ -118,3 +132,38 @@ $symbol-sizes: (
   140: 140px,
   150: 150px,
 );
+
+$transition-link: color 0.15s ease, background-color 0.15s ease,
+  border-color 0.15s ease, box-shadow 0.15s ease !default;
+
+// Bootstrap theme colors
+$theme-colors: (
+  "white": $white,
+  // custom color type
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "dark": $black,
+) !default;
+
+// Extended inverse colors for Bootstrap theme colors
+$theme-inverse-colors: (
+  "white": $white-inverse,
+  "primary": $primary-inverse,
+  "secondary": $secondary-inverse,
+  "success": $success-inverse,
+  "info": $info-inverse,
+  "warning": $warning-inverse,
+  "danger": $danger-inverse,
+  "light": $light-inverse,
+  "dark": $dark-inverse,
+) !default; // Custom variable
+
+
+$custom-radio-indicator-icon-checked-color: $black;
+$custom-radio-checked-background-color: $white;
+
+$custom-radio-indicator-icon-checked: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='-4 -4 8 8'><circle r='3' fill='#{$custom-radio-indicator-icon-checked-color}'/></svg>");

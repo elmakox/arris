@@ -1,0 +1,22 @@
+.section-title {
+  text-align: center;
+  max-width: 620px;
+  margin: 0 auto 4rem;
+
+  .title {
+    position: relative;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+
+    &:before {
+      content: url(../img/icons/arris-icon.png);
+      display: block;
+    }
+  }
+
+  .description {
+    color: $accent-color;
+    margin-bottom: 1rem;
+  }
+}

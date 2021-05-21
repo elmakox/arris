@@ -1,0 +1,73 @@
+.contact-form-wrapper {
+  margin-bottom: 5rem;
+  padding: 20px 20px 45px;
+  text-align: center;
+
+  .contact-desc {
+    margin: 0 auto;
+    // max-width: 768px;
+    margin-bottom: 2rem;
+    h3 {
+      font-weight: $font-weight-bold;
+    }
+
+    p {
+      margin-bottom: 0.8rem;
+    }
+  }
+}
+
+.disclaimer {
+  p {
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    text-align: justify;
+  }
+}
+
+.store-locations {
+  margin-bottom: 4rem;
+  padding: 20px 20px 45px;
+  text-align: center;
+}
+
+.store-item {
+  text-align: left;
+  margin-bottom: 2rem;
+
+  .store-title {
+    font-weight: $font-weight-bold;
+    color: $accent-color;
+    margin-bottom: 1rem;
+  }
+
+  .store-address {
+    margin-bottom: 0.75rem;
+  }
+}
+
+.contact-form {
+  .form-group {
+    margin-bottom: 2rem;
+  }
+}
+
+.contact-map {
+  padding: 20px;
+  margin-bottom: 4rem;
+}
+
+.contacts {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0.5rem;
+
+  li > a {
+    color: $text-color-1;
+
+    & > i {
+      font-size: 1.3rem;
+      margin-right: 10px;
+    }
+  }
+}

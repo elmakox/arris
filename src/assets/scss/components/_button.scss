@@ -1,3 +1,19 @@
 // -----------------------------------------------------------------------------
 // Button component style.
 // -----------------------------------------------------------------------------
+
+.btn {
+  border-radius: .15rem;
+}
+
+.action-btn {
+  @include button-variant(#ffffff, #cccccc, #e6e6e6, #adadad, #e6e6e6, #adadad);
+
+  &:after {
+    display: inline-block;
+    padding-left: 5px;
+    // font-size: 11px;
+    font-family: "Material Design Icons";
+    content: "\F0054";
+  }
+}

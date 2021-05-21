@@ -1,0 +1,158 @@
+// Tabs
+.nav.nav-tabs {
+  .nav-item {
+    margin-right: 0.25rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .nav-link {
+    .nav-text {
+      flex-grow: 0;
+    }
+  }
+
+  &.nav-tabs-line {
+		border-bottom: 0;
+    .nav-item {
+      margin: 0 0 -1px 0;
+    }
+
+    .nav-link {
+      border: 0;
+      border-bottom: 1px solid transparent;
+      transition: $transition-link;
+      padding: 0.85rem 1rem;
+      margin: 0 1rem;
+      // font-weight: $font-weight-bold;
+      color: $white;
+
+      .nav-item:first-child & {
+        margin-left: 0;
+      }
+
+      .nav-item:last-child & {
+        margin-right: 0;
+      }
+    }
+
+    .nav-item:first-child {
+      .nav-link {
+        margin-left: 0;
+      }
+    }
+
+    .nav-item:last-child {
+      .nav-link {
+        margin-right: 0;
+      }
+    }
+
+    .nav-link:hover:not(.disabled),
+    .nav-link.active,
+    .show > .nav-link {
+      background-color: transparent;
+      border: 0;
+      border-bottom: 1px solid $white;
+      transition: $transition-link;
+      // color: $black;
+    }
+
+    // Transparent white
+    &.nav-tabs-line-transparent-white {
+      border-bottom-color: rgba($white, 0.7);
+
+      .nav-link {
+        color: rgba($white, 0.7);
+
+        .nav-text {
+          color: rgba($white, 0.7);
+        }
+
+        .nav-icon {
+          i {
+            color: rgba($white, 0.7);
+          }
+
+          // Svg icon
+          // .svg-icon {
+          // 	@include svg-icon-color(rgba($white, 0.7));
+          // }
+        }
+
+        .nav-arrow {
+          color: rgba($white, 0.7);
+        }
+      }
+
+      .nav-link:hover:not(.disabled),
+      .nav-link.active,
+      .show > .nav-link {
+        border-bottom-color: $white;
+        color: $white;
+
+        .nav-text {
+          color: $white;
+        }
+
+        .nav-icon {
+          i {
+            color: $white;
+          }
+
+          // Svg icon
+          // .svg-icon {
+          // 	@include svg-icon-color($white);
+          // }
+        }
+
+        .nav-arrow {
+          color: $white;
+        }
+      }
+    }
+
+    // Theme colors
+    @each $name, $color in $theme-colors {
+      &.nav-tabs-line-#{$name} {
+        border-bottom-color: theme-light-color($name) !important;
+
+        .nav-link:hover:not(.disabled),
+        .nav-link.active,
+        .show > .nav-link {
+          border-bottom-color: $color;
+          color: $color;
+
+          .nav-text {
+            color: $color;
+          }
+
+          .nav-icon {
+            i {
+              color: $color;
+            }
+
+            // Svg icon
+            // .svg-icon {
+            // 	@include svg-icon-color($color);
+            // }
+          }
+
+          .nav-arrow {
+            color: $color;
+          }
+        }
+      }
+
+      &.nav-tabs-line-active-border-#{$name} {
+        .nav-link:hover:not(.disabled),
+        .nav-link.active,
+        .show > .nav-link {
+          border-bottom-color: $color !important;
+        }
+      }
+    }
+  }
+}
