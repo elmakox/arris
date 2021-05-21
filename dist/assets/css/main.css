@@ -17672,7 +17672,7 @@ h6, .h6 {
 }
 
 /* line 190, src/assets/scss/pages/_properties.scss */
-.property-actions {
+.property-header-actions {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -17693,7 +17693,7 @@ h6, .h6 {
 }
 
 /* line 200, src/assets/scss/pages/_properties.scss */
-.property-actions > li > a {
+.property-header-actions > li > a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17706,7 +17706,7 @@ h6, .h6 {
 }
 
 /* line 207, src/assets/scss/pages/_properties.scss */
-.property-actions > li > a i {
+.property-header-actions > li > a i {
   margin-right: 5px;
   font-size: 1.7rem;
 }
