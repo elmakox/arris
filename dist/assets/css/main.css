@@ -15327,13 +15327,20 @@ h6, .h6 {
   color: #fff;
 }
 
-/* line 67, src/assets/scss/layout/_footer.scss */
+@media screen and (max-width: 768px) {
+  /* line 67, src/assets/scss/layout/_footer.scss */
+  .holding-img {
+    text-align: center;
+  }
+}
+
+/* line 73, src/assets/scss/layout/_footer.scss */
 .footer-bottom {
   position: relative;
   margin: 1rem 0;
 }
 
-/* line 70, src/assets/scss/layout/_footer.scss */
+/* line 76, src/assets/scss/layout/_footer.scss */
 .footer-bottom .footer-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15344,12 +15351,23 @@ h6, .h6 {
   margin-top: 1rem;
 }
 
-/* line 74, src/assets/scss/layout/_footer.scss */
+@media screen and (max-width: 768px) {
+  /* line 76, src/assets/scss/layout/_footer.scss */
+  .footer-bottom .footer-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* line 86, src/assets/scss/layout/_footer.scss */
 .footer-bottom .footer-links .credits {
   color: #fff;
 }
 
-/* line 77, src/assets/scss/layout/_footer.scss */
+/* line 89, src/assets/scss/layout/_footer.scss */
 .footer-bottom .footer-links a {
   color: #fff;
 }
@@ -15705,6 +15723,13 @@ h6, .h6 {
 /* line 42, src/assets/scss/components/_form.scss */
 .form-control {
   font-weight: 400;
+}
+
+/* line 47, src/assets/scss/components/_form.scss */
+.search-checkboxes {
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.7);
+  color: #000;
 }
 
 /* line 1, src/assets/scss/components/_page-header.scss */
@@ -16158,7 +16183,7 @@ h6, .h6 {
 
 /* line 12, src/assets/scss/components/_title.scss */
 .section-title .title:before {
-  content: url(../img/icons/arris-icon.png);
+  content: url(../img/icons/arris-icone.png);
   display: block;
 }
 
@@ -17330,13 +17355,20 @@ h6, .h6 {
   z-index: 3;
 }
 
-/* line 40, src/assets/scss/pages/_home.scss */
+@media screen and (max-width: 768px) {
+  /* line 27, src/assets/scss/pages/_home.scss */
+  .home-hero .left-side {
+    display: none;
+  }
+}
+
+/* line 43, src/assets/scss/pages/_home.scss */
 .home-hero .left-side ul {
   margin: 0 auto;
   padding: 0;
 }
 
-/* line 44, src/assets/scss/pages/_home.scss */
+/* line 47, src/assets/scss/pages/_home.scss */
 .home-hero .left-side ul li {
   display: inline-block;
   margin: 0 10px;
@@ -17344,7 +17376,7 @@ h6, .h6 {
   list-style: none;
 }
 
-/* line 50, src/assets/scss/pages/_home.scss */
+/* line 53, src/assets/scss/pages/_home.scss */
 .home-hero .left-side ul li a {
   font-size: 14px;
   color: #fff;
@@ -17355,7 +17387,7 @@ h6, .h6 {
   border-bottom: 2px solid transparent;
 }
 
-/* line 66, src/assets/scss/pages/_home.scss */
+/* line 69, src/assets/scss/pages/_home.scss */
 .home-hero .hero-inner {
   width: 100%;
   height: 100%;
@@ -17379,14 +17411,14 @@ h6, .h6 {
   color: #fff;
 }
 
-/* line 80, src/assets/scss/pages/_home.scss */
+/* line 83, src/assets/scss/pages/_home.scss */
 .home-hero .hero-inner .tagline h2 {
   margin-bottom: 1rem;
   color: #fff;
   font-weight: 700;
 }
 
-/* line 88, src/assets/scss/pages/_home.scss */
+/* line 91, src/assets/scss/pages/_home.scss */
 .home-hero .scrolldown {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17411,7 +17443,7 @@ h6, .h6 {
   cursor: pointer;
 }
 
-/* line 105, src/assets/scss/pages/_home.scss */
+/* line 108, src/assets/scss/pages/_home.scss */
 .home-hero .scrolldown:before {
   content: "\2022";
   font-size: 2rem;
@@ -17444,23 +17476,23 @@ h6, .h6 {
   }
 }
 
-/* line 135, src/assets/scss/pages/_home.scss */
+/* line 138, src/assets/scss/pages/_home.scss */
 .partners-section {
   background-color: #fafafa;
   padding: 50px 0;
 }
 
-/* line 141, src/assets/scss/pages/_home.scss */
+/* line 144, src/assets/scss/pages/_home.scss */
 .partners {
   margin: 0 -15px;
 }
 
-/* line 144, src/assets/scss/pages/_home.scss */
+/* line 147, src/assets/scss/pages/_home.scss */
 .partner {
   margin: 0 15px;
 }
 
-/* line 146, src/assets/scss/pages/_home.scss */
+/* line 149, src/assets/scss/pages/_home.scss */
 .partner img {
   width: 100%;
 }

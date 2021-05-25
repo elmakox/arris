@@ -60,32 +60,32 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <i class="mdi mdi-menu"></i>
             </button>
     
             <div class="collapse navbar-collapse justify-content-center" id="main-menu">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="/">Accueil</a
+                  <a class="nav-link" href="/arris/">Accueil</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/about.html">Qui sommes-nous</a>
+                  <a class="nav-link" href="/arris/about.html">Qui sommes-nous</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/services.html">Autres services</a>
+                  <a class="nav-link" href="/arris/services.html">Autres services</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/franchise.html">Devenir franchisé</a>
+                  <a class="nav-link" href="/arris/franchise.html">Devenir franchisé</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/career.html">Carrière</a>
+                  <a class="nav-link" href="/arris/career.html">Carrière</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Blog</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/contact.html">Contact</a>
+                  <a class="nav-link" href="/arris/contact.html">Contact</a>
                 </li>
                 <li class="nav-item lang-items">
                   <a class="nav-link" href="#">FR</a>
@@ -187,28 +187,266 @@
                           </div>
                         </div>
                         <div class="advanced-search-panel">
-                          <a href="#" class="toggle-advanced">
+                          <a
+                          class="toggle-advanced" 
+                          data-toggle="collapse" 
+                          href="#toggleAdvancedPanel" role="button" 
+                          aria-expanded="false">
                             Recherche avancée <span class="mdi mdi-menu-down"></span>
                           </a>
                         </div>
                       </div>
                     </div>
-                    <!-- <div class="advanced-panel">
+                    <div class="advanced-panel collapse" id="toggleAdvancedPanel">
                       <div class="row">
                         <div class="col-md-3">
-                          ok
+                          
                         </div>
                         <div class="col-md-3">
-                          ok
+                          <div class="text-left">
+                            <label for="">Types de bien</label>
+                            <div class="search-checkboxes">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="all_types">
+                                <label class="form-check-label" for="all_types">
+                                  Toutes
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="item1">
+                                <label class="form-check-label" for="item1">
+                                  Maison individuelle
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="item2">
+                                <label class="form-check-label" for="item2">
+                                  Villa
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="item3">
+                                <label class="form-check-label" for="item3">
+                                  Appartement
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="item4">
+                                <label class="form-check-label" for="item4">
+                                  Maison préfabriquée
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="item5">
+                                <label class="form-check-label" for="item5">
+                                  Bureau
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="item6">
+                                <label class="form-check-label" for="item6">
+                                  Duplex
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="item7">
+                                <label class="form-check-label" for="item7">
+                                  Magasin
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="item8">
+                                <label class="form-check-label" for="item8">
+                                  Showroom
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="item9">
+                                <label class="form-check-label" for="item9">
+                                  Terrain résidentiel
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="item10">
+                                <label class="form-check-label" for="item10">
+                                  Terrain agricole
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="item11">
+                                <label class="form-check-label" for="item11">
+                                  Commercial
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="item12">
+                                <label class="form-check-label" for="item12">
+                                  Immeuble
+                                </label>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                         <div class="col-md-3">
-                          ok
+                          <div class="text-left">
+                            <label for="">Cractéristiques</label>
+                            <div class="search-checkboxes">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="all_cars">
+                                <label class="form-check-label" for="all_cars">
+                                  Toutes
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="car1">
+                                <label class="form-check-label" for="car1">
+                                  Salles de bains
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="car2">
+                                <label class="form-check-label" for="car2">
+                                  Cuisine
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="car3">
+                                <label class="form-check-label" for="car3">
+                                  Garage
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="car4">
+                                <label class="form-check-label" for="car4">
+                                  Patio/Terrasse/Balcon
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="car5">
+                                <label class="form-check-label" for="car5">
+                                  Meublé
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="car6">
+                                <label class="form-check-label" for="car6">
+                                  Climatisation
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="car7">
+                                <label class="form-check-label" for="car7">
+                                  Partking/Parking privé
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="car8">
+                                <label class="form-check-label" for="car8">
+                                  Piscine
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="car9">
+                                <label class="form-check-label" for="car9">
+                                  Vue sur la mer
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="car10">
+                                <label class="form-check-label" for="car10">
+                                  Pet friendly
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="car11">
+                                <label class="form-check-label" for="car11">
+                                  Salle de magasin
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="car12">
+                                <label class="form-check-label" for="car12">
+                                  Sécurité
+                                </label>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                         <div class="col-md-3">
-                          ok
+                          <div class="text-left">
+                            <label for="">Catégories</label>
+                            <div class="search-checkboxes">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="all_cats">
+                                <label class="form-check-label" for="all_cats">
+                                  Toutes
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="cat1">
+                                <label class="form-check-label" for="cat1">
+                                  Résidentiel
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="cat2">
+                                <label class="form-check-label" for="cat2">
+                                  Commercial
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="cat3">
+                                <label class="form-check-label" for="cat3">
+                                  Terrain
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="cat4">
+                                <label class="form-check-label" for="cat4">
+                                  Industriel
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="cat5">
+                                <label class="form-check-label" for="cat5">
+                                  Usage mixte
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="cat6">
+                                <label class="form-check-label" for="cat6">
+                                  Boutique
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="cat7">
+                                <label class="form-check-label" for="cat7">
+                                  Exploitatios Agricoles
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="cat8">
+                                <label class="form-check-label" for="cat8">
+                                  Petites Exploitations
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="cat9">
+                                <label class="form-check-label" for="cat9">
+                                  Vente  aux enchères
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  
+                        <div class="col-md-12">
+                          <div class="text-center my-5">
+                            <button class="btn btn-dark">Rechercher</button>
+                          </div>
                         </div>
                       </div>
-                    </div> -->
+                    </div>
                   </form>    </div>  
               </div>
             </div>
@@ -793,11 +1031,11 @@
     <footer class="footer clearfix">
       <div class="container">
         <div class="footer-top">
-          <a href="#" class="footer-logo">
+          <a href="#" class="footer-logo mb-4">
             <img src="assets/img/ARRIS-LOGO.png" alt="footer logo" />
           </a>
     
-          <ul class="footer-menu">
+          <ul class="footer-menu d-sm-none d-md-block">
             <li><a href="#">Accueil</a></li>
             <li><a href="#">Qui sommes-nous</a></li>
             <li><a href="#">Nos meilleurs biens</a></li>
@@ -806,7 +1044,7 @@
             <li><a href="#">Contact</a></li>
           </ul>
     
-          <div class="footer-social">
+          <div class="footer-social my-sm-4">
               <ul>
                   <li>
                       <a href="#"><i class="mdi mdi-twitter"></i></a>
