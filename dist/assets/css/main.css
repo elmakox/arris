@@ -15269,17 +15269,6 @@ h6, .h6 {
   font-size: 0.875rem;
 }
 
-/* line 14, src/assets/scss/layout/_footer.scss */
-.footer:before {
-  position: absolute;
-  content: "";
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.15);
-}
-
 /* line 25, src/assets/scss/layout/_footer.scss */
 .footer-top {
   position: relative;
@@ -15744,10 +15733,21 @@ h6, .h6 {
   bottom: 0;
   right: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 /* line 26, src/assets/scss/components/_page-header.scss */
+.page-header .page-header__inner h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+/* line 31, src/assets/scss/components/_page-header.scss */
+.page-header .page-header__inner p {
+  font-size: 1.4rem;
+}
+
+/* line 35, src/assets/scss/components/_page-header.scss */
 .page-header .page-header__inner h1, .page-header .page-header__inner p {
   position: relative;
   color: #fff;
@@ -15771,12 +15771,12 @@ h6, .h6 {
 
 /* line 14, src/assets/scss/components/_property.scss */
 .properties-wrapper .swiper-button-next {
-  right: -40px;
+  right: -80px;
 }
 
 /* line 18, src/assets/scss/components/_property.scss */
 .properties-wrapper .swiper-button-prev {
-  left: -40px;
+  left: -80px;
 }
 
 /* line 23, src/assets/scss/components/_property.scss */
@@ -17135,7 +17135,6 @@ h6, .h6 {
 .agent-infos .agent-name {
   color: #82c456;
   font-weight: 700;
-  margin-bottom: 0;
 }
 
 /* line 69, src/assets/scss/pages/_agencies.scss */
@@ -17148,7 +17147,6 @@ h6, .h6 {
 /* line 75, src/assets/scss/pages/_agencies.scss */
 .agent-infos .agent-address {
   color: #000;
-  margin-bottom: 1rem;
 }
 
 /* line 86, src/assets/scss/pages/_agencies.scss */
