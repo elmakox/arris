@@ -1,0 +1,118 @@
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.blog-item {
+  margin-bottom: 2rem;
+
+  .blog-brief {
+    padding: 50px 40px 50px 45px;
+  }
+}
+
+.blog-img {
+  img {
+    width: 100%;
+  }
+}
+
+
+.blog-meta {
+  margin-bottom: 20px;
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 25px;
+    position: relative;
+    font-size: 14px;
+    margin-top: 0;
+
+    i {
+      font-size: 1.1rem;
+      color: $accent-color;
+      margin-right: 5px;
+    }
+  }
+}
+
+.blog-category {
+  a {
+    background-color: $accent-color;
+    color: $white;
+    padding: 5px 15px 2px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}
+
+.blog-title {
+  font-weight: $font-weight-semibold;
+  margin-bottom: 10px;
+}
+
+.blog-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog-author {
+  img {
+    display: inline-block;
+    max-width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  a {
+    font-weight: $font-weight-semibold;
+  }
+}
+
+.blog-readmore {
+  font-weight: $font-weight-semibold;
+  font-size: .875rem ;
+}
+
+
+.blog-media {
+  margin-bottom: 2.5rem;
+}
+
+.blog-content  {
+  padding: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.blog-text {
+  p, blockquote {
+    text-align: justify;
+  }
+
+  blockquote {
+    position: relative;
+    padding-left: 3rem;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '\F027E';
+      font-family: "Material Design Icons";
+      font-size: 6rem;
+      color: $gray-200;
+      z-index: -1;
+    }
+  }
+}
+

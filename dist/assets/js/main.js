@@ -105,19 +105,22 @@ $(function () {
     spaceBetween: 10,
     loop: true,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
+      nextEl: ".gallery-nav-next",
+      prevEl: ".gallery-nav-prev"
     },
     thumbs: {
       swiper: swiper
     }
   });
-  var sidebar = new StickySidebar("#agent-sidebar", {
-    containerSelector: "#agent-wrapper",
-    innerWrapperSelector: ".sidebar__inner",
-    topSpacing: 120,
-    bottomSpacing: 120
-  }); // var swiper = new Swiper(".properties", {
+
+  if ($("#agent-sidebar").length > 0) {
+    var sidebar = new StickySidebar("#agent-sidebar", {
+      containerSelector: "#agent-wrapper",
+      innerWrapperSelector: ".sidebar__inner",
+      topSpacing: 120,
+      bottomSpacing: 120
+    });
+  } // var swiper = new Swiper(".properties", {
   //   // speed: 600,
   //   speed: 1000,
   //   slidesPerView: 2,
@@ -132,4 +135,5 @@ $(function () {
   //     prevEl: ".swiper-button-prev",
   //   },
   // });
+
 });

@@ -61,7 +61,7 @@ a {
   margin: 3rem 0;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -12px;
     left: 0;
@@ -165,7 +165,7 @@ a {
   overflow: hidden;
 
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -180,7 +180,6 @@ a {
   }
 }
 
-
 .engage-section {
   margin-bottom: 4rem;
 }
@@ -188,7 +187,6 @@ a {
 .separator {
   border-top: 6px solid $accent-color;
 }
-
 
 .bordered {
   position: relative;
@@ -247,7 +245,6 @@ a {
   }
 }
 
-
 .listing-header {
   position: relative;
 
@@ -265,5 +262,115 @@ a {
     position: absolute;
     top: 0;
     right: 0;
+  }
+}
+
+.widget {
+  margin-bottom: 30px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+      margin-bottom: 10px;
+    }
+  }
+
+  .widget-title {
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+}
+
+.search-widget {
+  position: relative;
+  input {
+    width: 100%;
+    margin-bottom: 0;
+    padding-right: 65px;
+    padding-left: 20px;
+    height: 60px;
+    // background-color: var(--section-bg-1);
+    font-weight: 600;
+    font-size: 14px;
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
+  button {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    padding: 0 20px;
+    border: 1px solid;
+
+    i {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.posts-widget {
+  ul {
+    margin: 0;
+    padding: 0;
+
+    > li {
+      list-style: none;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.post-item-img {
+  max-width: 90px;
+  float: left;
+  margin-right: 20px;
+}
+
+.post-item-info {
+  span {
+    font-size: 0.75rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+    font-weight: $font-weight-semibold;
+  }
+}
+
+.categories-widget {
+  a {
+    display: block;
+    color: $gray;
+
+    span {
+      float: right;
+      // color: var(--ltn__color-5);
+    }
+  }
+}
+
+.tags-widget {
+  li {
+    display: inline-block;
+    margin: 5px 3px;
+
+    a {
+      color: $gray;
+      padding: 0.25rem;
+    }
+
+    &:after {
+      content: "/";
+    }
+    &:last-child::after {
+      content: "";
+    }
   }
 }

@@ -64,10 +64,22 @@
   }
 }
 
+.holding-img {
+  @include media-max(768px) {
+    text-align: center;
+  }
+}
+
 .footer-bottom {
   position: relative;
   margin: 1rem 0;
   .footer-links {
+
+    @include media-max(768px) {
+      // display: block;
+      flex-direction: column;
+      text-align: center;
+    }
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;

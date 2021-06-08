@@ -4,8 +4,6 @@
 
 Changes should be commited to `src` files only.
 
-The `dist` folder is not kept in source control.
-
 ### Features
 
 The template is built with Sass and Gulp build system with these features:

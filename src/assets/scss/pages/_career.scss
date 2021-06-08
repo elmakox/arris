@@ -1,0 +1,70 @@
+.career-desc {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 3rem;
+
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+.career-content {
+  margin-bottom: 5rem;
+  padding: 20px 50px 45px;
+  text-align: center;
+}
+
+.job-form {
+  margin-top: 2rem;
+}
+
+.jobs-bar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.job-list {
+  margin-top: 3rem;
+  text-align: left;
+}
+
+.job-content {
+  p {
+    margin-bottom: .785rem;
+  }
+}
+
+.job-meta {
+  font-weight: $font-weight-light;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  li {
+    &:after {
+      content: "|";
+    }
+
+    &:last-child {
+      &::after {
+        content: "";
+      }
+    }
+
+    a {
+      color: $body-color;
+      padding: 0.25rem;
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+.job-title {
+  cursor: pointer;
+}
+

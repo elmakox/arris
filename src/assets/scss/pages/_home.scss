@@ -25,6 +25,9 @@
   }
 
   .left-side {
+    @include media-max(768px) { 
+      display: none;
+    }
     width: 50%;
     height: 60px;
     display: flex;

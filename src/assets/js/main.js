@@ -1,6 +1,6 @@
 "use strict";
 
-$(function() {
+$(function () {
   $("body").autoPadding({
     source: $(".js-header"),
   });
@@ -10,16 +10,16 @@ $(function() {
   $(".main:not(.home)").css("margin-top", $(".main-header").height());
   $(window).on("scroll", function () {
     var $nav = $(".main-header"),
-        $main = $(".main:not(.home)")
+      $main = $(".main:not(.home)");
 
-    if ($(this).scrollTop() > $nav.height())  {
+    if ($(this).scrollTop() > $nav.height()) {
       $main.css("margin-top", 0);
       $nav.addClass("scrolled shadow");
     } else {
       $nav.removeClass("scrolled shadow");
       $main.css("margin-top", $nav.height());
     }
-      // $nav.toggleClass("scrolled shadow", $(this).scrollTop() > $nav.height());
+    // $nav.toggleClass("scrolled shadow", $(this).scrollTop() > $nav.height());
   });
 
   var pageSection = $(".bg-image");
@@ -122,22 +122,22 @@ $(function() {
     spaceBetween: 10,
     loop: true,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".gallery-nav-next",
+      prevEl: ".gallery-nav-prev",
     },
     thumbs: {
       swiper: swiper,
     },
   });
 
-  var sidebar = new StickySidebar("#agent-sidebar", {
-    containerSelector: "#agent-wrapper",
-    innerWrapperSelector: ".sidebar__inner",
-    topSpacing: 120,
-    bottomSpacing: 120,
-  });
-
-
+  if ($("#agent-sidebar").length > 0) {
+    var sidebar = new StickySidebar("#agent-sidebar", {
+      containerSelector: "#agent-wrapper",
+      innerWrapperSelector: ".sidebar__inner",
+      topSpacing: 120,
+      bottomSpacing: 120,
+    });
+  }
 
   // var swiper = new Swiper(".properties", {
   //   // speed: 600,
